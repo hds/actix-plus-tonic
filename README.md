@@ -68,3 +68,8 @@ Hello My name!
 Of course, this doesn't show that this request made its way all the way up to
 the Tonic server, but you can check the logs from the frontend and backend
 servers to verify that.
+
+## License
+
+This project is licensed under the [MIT license](LICENSE).
+
