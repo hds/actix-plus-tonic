@@ -1,12 +1,10 @@
 use log::info;
 use tonic::{transport::Server, Request, Response, Status};
 
-use hello_world::greeter_server::{Greeter, GreeterServer};
-use hello_world::{HelloReply, HelloRequest};
+use proto::hello_world::greeter_server::{Greeter, GreeterServer};
+use proto::hello_world::{HelloReply, HelloRequest};
 
-pub mod hello_world {
-    tonic::include_proto!("helloworld");
-}
+mod proto;
 
 #[derive(Debug, Default)]
 pub struct MyGreeter {}

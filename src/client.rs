@@ -1,12 +1,10 @@
 use log::info;
 use tonic;
 
-use hello_world::greeter_client::GreeterClient;
-use hello_world::HelloRequest;
+use proto::hello_world::greeter_client::GreeterClient;
+use proto::hello_world::HelloRequest;
 
-pub mod hello_world {
-    tonic::include_proto!("helloworld");
-}
+mod proto;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
