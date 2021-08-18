@@ -9,3 +9,9 @@ Web](https://github.com/actix/actix-web) server that communicates with a
 The initial code for the Actix Web part of this project was taken directly from
 the [Getting Started](https://actix.rs/docs/getting-started/) documentation
 page.
+
+## Tonic
+
+The initial code for Tonic comes from the [Getting
+Started](https://github.com/hyperium/tonic/blob/master/examples/helloworld-tutorial.md)
+hello world tutorial.
